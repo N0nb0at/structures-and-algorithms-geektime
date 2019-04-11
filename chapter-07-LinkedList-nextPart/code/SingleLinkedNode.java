@@ -45,12 +45,49 @@ public class SingleLinkedNode {
         this.setNext(node);
     }
 
+    /**
+     * 将新节点追加到尾部
+     *
+     * @param node 新结点
+     */
+    public void addTail(SingleLinkedNode node) {
+        SingleLinkedNode end = this;
+        while (end != null) {
+            if (end.getNext() == null) {
+                end.setNext(node);
+                break;
+            } else {
+                end = end.getNext();
+            }
+        }
+    }
+
+    /**
+     * 将新节点插入到指定节点之后
+     *
+     * @param node 新结点
+     * @return 是否插入成功：找到数据相同的点，视为插入成功；反之失败
+     */
+    public boolean addAfter(SingleLinkedNode node) {
+        SingleLinkedNode target = this;
+        while (target != null) {
+            if (target.getData() == node.getData()) {
+                node.setNext(target.getNext());
+                target.setNext(node);
+                return true;
+            } else {
+                target = target.getNext();
+            }
+        }
+        return false;
+    }
+
     public void print() {
         StringBuilder sb = new StringBuilder();
         sb.append("LinkedList content: [").append(this.getData());
         SingleLinkedNode next = this.getNext();
         while (next != null) {
-            sb.append(",").append(next.getData());
+            sb.append("->").append(next.getData());
             next = next.getNext();
         }
         sb.append("]");
