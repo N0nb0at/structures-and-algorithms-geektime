@@ -23,6 +23,16 @@ public class SingleLinkedNode {
     /**
      * 指定参数的构造方法
      *
+     * @param data 当前结点值
+     */
+    public SingleLinkedNode(int data) {
+        this.next = null;
+        this.data = data;
+    }
+
+    /**
+     * 指定参数的构造方法
+     *
      * @param next 下一节点
      * @param data 当前结点值
      */
@@ -80,6 +90,14 @@ public class SingleLinkedNode {
             }
         }
         return false;
+    }
+
+    public static SingleLinkedNode initSingleLinkedList(int... value) {
+        SingleLinkedNode list = new SingleLinkedNode(value[0]);
+        for (int index = 1; index < value.length; index++) {
+            list.addTail(new SingleLinkedNode(value[index]));
+        }
+        return list;
     }
 
     public void print() {
