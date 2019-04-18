@@ -1,4 +1,12 @@
-# 链表（上）：如何实现LRU缓存淘汰算法?
+---
+title: 数据结构与算法-06-链表（上）：如何实现LRU缓存淘汰算法?
+date: 2019-04-18 21:59:34
+categories:
+  - [Structures & Algorithms]
+tags:
+  - [Structures & Algorithms]
+  - [Stack]
+---
 
 首先讨论一个经典的链表应用场景，LRU 缓存淘汰算法。
 

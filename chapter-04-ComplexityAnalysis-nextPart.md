@@ -1,4 +1,12 @@
-# 复杂度分析（下）：浅析最好、最坏、平均、均摊时间复杂度
+---
+title: 数据结构与算法-04-复杂度分析（下）：浅析最好、最坏、平均、均摊时间复杂度
+date: 2019-04-18 21:57:30
+categories:
+  - [Structures & Algorithms]
+tags:
+  - [Structures & Algorithms]
+  - [Stack]
+---
 
 ## 最好、最坏情况时间复杂度 best|worst case time complexity
 

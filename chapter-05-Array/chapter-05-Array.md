@@ -1,4 +1,12 @@
-#  数组：为什么很多编程语言中数组都从0开始编号？
+---
+title: 数据结构与算法-05-数组：为什么很多编程语言中数组都从0开始编号？
+date: 2019-04-18 21:59:34
+categories:
+  - [Structures & Algorithms]
+tags:
+  - [Structures & Algorithms]
+  - [Stack]
+---
 
 ## 如何实现随机访问
 
